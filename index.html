@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+<!-- button that refreshes page -->
+<a href="index.html"><button>reset</button></a>
+    <script>
+        let userInput = prompt("Do you choose rock, paper, or scissors?");
+        let comInput = Math.random();
+
+        if (comInput < 0.34){
+            comInput = "rock";
+            } else if (comInput <= 0.67) {
+            comInput = "paper";
+            } else {
+            comInput = "scissors";
+        }
+
+        if (userInput === comInput) {
+            alert("Its a tie!")
+            } else if (userInput === "rock" && comInput === "scissors") {
+            alert("You chose rock, computer picked scissors. Rock wins!")
+            } else if (userInput ==="rock" && comInput === "paper") {
+            alert("You chose rock, computer picked paper. Paper wins!")
+            } else if (userInput === "scissors" && comInput === "paper") {
+            alert("You chose scissors, computer chose paper.  Scissors win!")
+            } else if (userInput === "scissors" && comInput === "rock") {
+            alert("You chose scissors, computer chose rock. Rock wins!")
+            } else if (userInput === "paper" && comInput === "scissors") {
+            alert("You chose paper, computer chose scissors. Scissors win!")
+            } else if (userInput === "paper" && comInput === "rock") {
+            alert("You chose paper, computer chose rock. Rock wins!")
+        };
+
+
+
+    </script>
+
+</body>
+<footer>
+
+</footer>
